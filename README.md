@@ -4,6 +4,8 @@
 
 **Find the signal in congressional disclosures.** An offline Python research toolkit for asking whether repeated buying, cross-member rarity, and disclosure timing help distinguish investment signals.
 
+**Research and education only — not investment advice.** [Read the disclaimer](#disclaimer).
+
 [Results](#historical-results) · [Return drivers](#monthly-schedule--return-drivers) · [Quickstart](#quickstart) · [Methodology](docs/METHODOLOGY.md) · [Input contract](docs/INPUT_SCHEMA.md) · [Historical study](docs/HISTORICAL_STUDY.md) · [Audit](docs/AUDIT.md)
 
 ## Historical results
@@ -101,3 +103,13 @@ Frozen historical NAV summary ------------------------> diagnostic figures
 - [Related work](docs/RELATED_WORK.md), [contributing](CONTRIBUTING.md), and [security](SECURITY.md).
 
 MIT covers the code. Third-party data rights are separate. No raw vendor datasets, credentials, account integrations, or order execution are included. This is a research library; no live profitability or execution capacity has been established.
+
+## Disclaimer
+
+Congress Signal Lab is an independent, experimental project for **research and educational purposes only**. Nothing in this repository is investment, financial, legal, or tax advice, a personalized recommendation, or an offer or solicitation to buy or sell any security. No advisory relationship is created by using this project.
+
+- **Hypothetical performance:** Results are historical simulations, not actual investment returns. Rules were explored using overlapping historical data, creating selection and overfitting risk. Reported results include known implementation and data limitations documented in the [audit](docs/AUDIT.md); corrected annual results remain pending. Past or simulated performance does not guarantee future results.
+- **Data and execution limitations:** Public disclosures may be delayed, incomplete, amended, or incorrectly classified. Market data and software may contain errors. Modeled prices and fees do not establish executable fills, liquidity, capacity, or real-world returns; actual costs, taxes, and losses may differ materially.
+- **Investment risk:** Investing can result in loss of capital. Independently verify inputs and conclusions, assess suitability for your circumstances, and seek qualified professional advice where appropriate before making investment decisions.
+- **No affiliation or allegations:** This project is not affiliated with or endorsed by the U.S. Congress, any government agency, any member of Congress, or any data provider. A score or trading pattern does not establish intent, access to nonpublic information, insider trading, or wrongdoing.
+- **Software and data rights:** The software is provided “as is” under the [MIT License](LICENSE), without warranty as specified there. Third-party data remains subject to its own terms and restrictions; public availability does not imply unrestricted reuse or redistribution. See [data sources and rights](docs/DATA_SOURCES.md).
