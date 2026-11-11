@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "congress-signal-lab"
+version = "0.1.1"
+description = "Offline research on congressional disclosure rarity and policy relevance"
+requires-python = ">=3.11"
+license = "MIT"
+readme = "README.md"
+dependencies = []
+
+[project.scripts]
+congress-signal-lab = "congress_signal_lab.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["congress_signal_lab*"]
+
+[project.optional-dependencies]
+plots = ["matplotlib>=3.8", "numpy>=1.26"]
+
+[project.urls]
+Repository = "https://github.com/jrdeng93/CongressSignalLab"
+Issues = "https://github.com/jrdeng93/CongressSignalLab/issues"

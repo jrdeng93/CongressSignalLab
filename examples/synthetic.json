@@ -1,0 +1,59 @@
+{
+  "synthetic": true,
+  "description": "Invented members, symbols and prices; not investment evidence.",
+  "events": [
+    {
+      "event_id": "fake-1",
+      "member": "Example Member A",
+      "ticker": "DEMO",
+      "transaction_date": "2026-01-01",
+      "available_at": "2026-01-02T14:00:00Z",
+      "first_seen_at": "2026-01-02T20:00:00Z",
+      "asset_type": "stock"
+    }
+  ],
+  "calendar": [
+    "2026-01-02",
+    "2026-01-05",
+    "2026-01-06",
+    "2026-01-07"
+  ],
+  "prices": {
+    "DEMO": {
+      "2026-01-02": {
+        "open": 100,
+        "close": 101
+      },
+      "2026-01-05": {
+        "open": 101,
+        "close": 102
+      },
+      "2026-01-06": {
+        "open": 102,
+        "close": 103
+      },
+      "2026-01-07": {
+        "open": 103,
+        "close": 104
+      }
+    },
+    "SPY": {
+      "2026-01-02": {
+        "open": 100,
+        "close": 100
+      },
+      "2026-01-05": {
+        "open": 101,
+        "close": 101
+      },
+      "2026-01-06": {
+        "open": 102,
+        "close": 102
+      },
+      "2026-01-07": {
+        "open": 103,
+        "close": 103
+      }
+    }
+  }
+}
