@@ -4,7 +4,7 @@
 
 **Find the signal in congressional disclosures.** An offline Python research toolkit for asking whether repeated buying, cross-member rarity, and disclosure timing help distinguish investment signals.
 
-[Results](#historical-results) · [Quickstart](#quickstart) · [Methodology](docs/METHODOLOGY.md) · [Input contract](docs/INPUT_SCHEMA.md) · [Historical study](docs/HISTORICAL_STUDY.md) · [Audit](docs/AUDIT.md)
+[Results](#historical-results) · [Return drivers](#monthly-schedule--return-drivers) · [Quickstart](#quickstart) · [Methodology](docs/METHODOLOGY.md) · [Input contract](docs/INPUT_SCHEMA.md) · [Historical study](docs/HISTORICAL_STUDY.md) · [Audit](docs/AUDIT.md)
 
 ## Historical results
 
@@ -23,16 +23,28 @@ Window: 2025-11-07 through 2026-11-06, 251 SPY sessions. Next-session open entry
 
 ![Legacy diagnostic NAV and drawdown; corrected rerun pending](assets/research/year/equity.png)
 
-Three positions supplied 68.4% of net profit. Removing those three signals and resimulating cash, without substituting second-ranked signals, reduced the original strategy to +6.12%. Higher-cost and delayed-entry checks are described in the [study](docs/HISTORICAL_STUDY.md). A return difference is not risk-adjusted alpha.
+## Monthly Schedule & Return Drivers
 
-<details>
-<summary>Monthly outcomes and allocation sensitivity</summary>
+These figures describe the same original historical experiment above; corrected portfolio results remain pending.
 
-![Legacy monthly outcomes; first and last months are partial](assets/research/year/monthly.png)
+### A standout month: +19.82% in January 2026
 
-![Legacy profit concentration and capital allocation sensitivity](assets/research/year/drivers.png)
+![Monthly Return Heatmap — legacy results; first and last months are partial](assets/research/year/monthly.png)
 
-</details>
+[View the full-size heatmap (SVG)](assets/research/year/monthly.svg)
+
+Returns arrive in episodic bursts rather than steady monthly outperformance: January 2026 returned **+19.82%**, and `consensus_20cap` beat SPY in **6 of 13 monthly buckets**. November 2025 and November 2026 are partial calendar months.
+
+### What drove the return?
+
+![Return Attribution and Capital Cap Sensitivity — legacy results](assets/research/year/drivers.png)
+
+[View the full-size attribution chart (SVG)](assets/research/year/drivers.svg)
+
+- **Top-position concentration:** The three largest winning positions — `GNPX` **+12.49 pp**, `BE` **+6.29 pp**, and `ANET` **+3.28 pp** — account for **68.4% of total net profit**. Subtracting their original PnL leaves **+10.21%** by arithmetic attribution. Removing those signals and **resimulating cash** instead gives **+6.12%**, without replacing them with second-ranked candidates. These are different calculations: removing trades changes the cash available to later cohorts.
+- **Capital allocation matters:** At a **2% initial-capital cap** per cohort, consensus returned **+3.25%** with **1.47% maximum daily-close drawdown**, versus **+32.26%** and **9.85% drawdown** at the **20% cap**. Different cash utilization and funded trades drive this sensitivity; the simulation uses **no margin borrowing**.
+
+Full-precision daily NAVs and monthly returns: [`year-data.json`](assets/research/year-data.json). Methodology and sensitivity checks: [365-day study](docs/HISTORICAL_STUDY.md). Known defects and validation limits: [historical audit](docs/AUDIT_365.md). A return difference is not risk-adjusted alpha.
 
 ## The idea: read portfolios like documents
 

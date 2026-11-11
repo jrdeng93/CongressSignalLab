@@ -31,7 +31,7 @@ Start with $100,000. Each cohort receives up to 20% of initial capital, bounded 
 | TF-IDF + consensus | +32.26% | +21.21 pp | 9.85% |
 | SPY | +11.05% | — | 8.88% |
 
-Consensus funded 140 positions: 135 closed, five open, 20 zero-cash skips. Closed wins: 74/135 (54.81%). At a 2% initial-capital cohort cap, return was +3.25%, with different cash usage and funded trades. This is not an allocation-independent factor effect.
+Consensus funded 140 positions: 135 closed, five open, 20 zero-cash skips. Closed wins: 74/135 (54.81%). At a 2% initial-capital cohort cap, return was +3.25% with 1.47% maximum daily-close drawdown, with different cash usage and funded trades. This is not an allocation-independent factor effect.
 
 ## Concentration and fixed-rule sensitivities
 
